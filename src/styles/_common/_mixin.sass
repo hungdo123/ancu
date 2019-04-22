@@ -1,0 +1,28 @@
+// Các Mixin viết vào đây
+$small: 300px
+=mobile-nav($rong: 3rem,$cao: 3rem)
+	line-height: 3rem
+	width: $rong
+	height: $cao
+	display: inline-flex
+	justify-content: center
+	align-items: center
+	outline: none
+	background: rgba(#000,0.1)
+	border-radius: 0
+	span
+		font-size: 1.5rem
+		color: #fff
+	&:hover
+		background: rgba(#000,0.5)
+=bg-overlay()
+	content: ''
+	display: block
+	width: 100%
+	height: 100%
+	background: rgba(#000,0.5)
+	top: 0
+	left: 0
+	opacity: 0
+	transition: .5s all ease-in-out
+	position: absolute

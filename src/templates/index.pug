@@ -1,0 +1,170 @@
+extends _layout/layout
+
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+//- Phần khai báo body
+block body
+	//- Bạn viết code vào đây nhớ là phải mở đầu bằng section ở mỗi khối
+	section.home-slider
+		.container-fluid.no-gutters
+			.row.no-gutters
+				.owl-one.owl-carousel.owl-theme
+					.item
+						figure
+							img(src="./img/home-slider-1.png", alt="home-slider-1").img-fluid
+							figcaption
+								p.text-slider Lorem ipsum dolor sit amet consectetur
+					.item
+						figure
+							img(src="./img/home-slider-2.png", alt="home-slider-1").img-fluid
+							figcaption
+								p.text-slider Lorem ipsum dolor sit amet consectetur
+					.item
+						figure
+							img(src="./img/home-slider-3.png", alt="home-slider-1").img-fluid
+							figcaption
+								p.text-slider Lorem ipsum dolor sit amet consectetur
+					.item
+						figure
+							img(src="./img/home-slider-1.png", alt="home-slider-1").img-fluid
+							figcaption
+								p.text-slider Lorem ipsum dolor sit amet consectetur
+	section.article-area
+		.container-fluid.no-gutters
+			.row.no-gutters
+				.col-12.col-md-3
+					.box-area
+						p.box-detail Lĩnh vực hoạt động
+				.col-12.col-md-9
+					.owl-area.owl-carousel.owl-theme
+						.item
+							.box-area-slider
+								img(src="./img/intro-1.png", alt="intro").img-fluid
+								p.text-area Nội thất 
+								span
+									i.fa.fa-long-arrow-right
+						.item
+							.box-area-slider
+								img(src="./img/intro-2.png", alt="intro").img-fluid
+								p.text-area Thiết kế
+								span
+									i.fa.fa-long-arrow-right
+						.item
+							.box-area-slider
+								img(src="./img/intro-3.png", alt="intro").img-fluid
+								p.text-area Xây dựng
+								span
+									i.fa.fa-long-arrow-right
+	section.article-intro
+		.container-fluid.no-gutters
+			.row.no-gutters
+				.col-12.col-sm-6
+					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/fc-DgRO1SrQ?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				.col-12.col-sm-6
+					.intro-text
+						h3 Giới thiệu
+						p.intro-detail Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus in dignissimos possimus voluptatum sed reiciendis quod saepe unde nesciunt inventore dolores nostrum quaerat aliquam perspiciatis, id aut. Qui, et officia.Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+						a(href="#") Xem thêm 
+							span 
+								i.fa.fa-long-arrow-right
+	section.article-chart
+		.container
+			.row
+				.col-6.col-sm-6.col-md-3
+					.chart-text
+						p.chart-number 100+
+						p.chart-detail Lorem ipsum
+				.col-6.col-sm-6.col-md-3
+					.chart-text
+						p.chart-number 800+
+						p.chart-detail Lorem ipsum
+				.col-6.col-sm-6.col-md-3
+					.chart-text
+						p.chart-number 25+
+						p.chart-detail Lorem ipsum
+				.col-6.col-sm-6.col-md-3
+					.chart-text
+						p.chart-number 100+
+						p.chart-detail Lorem ipsum
+			
+	//- Dự án đạc biệt
+	section.article-special
+		.container-fluid.no-gutters
+			.row.no-gutters
+				.col-12.col-sm-12.col-lg-9.order-2.order-lg-1
+					.owl-two.owl-carousel.owl-theme
+						.item
+							img(src="./img/project-5.png", alt="")
+						.item
+							img(src="./img/project-5.png", alt="")
+						.item
+							img(src="./img/project-5.png", alt="")
+						.item
+							img(src="./img/project-5.png", alt="")
+						.item
+							img(src="./img/project-5.png", alt="")
+						.item
+							img(src="./img/project-5.png", alt="")
+				.col-12.col-lg-3.order-1.order-lg-2
+					.box-content
+						.box-1
+							p.text-box-1 Dự án nổi bật
+						.box-2
+							p.box-2-title Nhà hàng lạc nam
+							p.box-2-address 156 bùi thị xuận, đà lạt
+							p.box-2-detail Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, aut! Minus sunt id illo, adipisci
+			//- Dự án nhỏ
+	section.article-project
+		.container-fluid.no-gutters
+			.row.no-gutters
+				.col
+					.owl-project.owl-carousel.owl-theme
+						a(href="#")
+							.item
+								.box
+									img(src="./img/project-2.png", alt="intro").img-fluid
+									p.text-project nhà hàng lạc nam
+									
+						a(href="#")
+							.item
+								.box
+									img(src="./img/project-3.png", alt="intro").img-fluid
+									p.text-project acb bình dương 
+									
+						a(href="#")
+							.item
+								.box
+									img(src="./img/project-2.png", alt="intro").img-fluid
+									p.text-project acb chợ lớn
+									
+						a(href="#")
+							.item
+								.box
+									img(src="./img/project-1.png", alt="intro").img-fluid
+									p.text-project acb chợ lớn
+									
+	section.article-partner
+		.container
+			.row
+				.col
+					.owl-brand.owl-carousel.owl-theme
+						.item
+							img(src="./img/logo-1.png", alt="").img-fluid
+						.item
+							img(src="./img/logo-2.png", alt="").img-fluid
+						.item
+							img(src="./img/logo-3.png", alt="").img-fluid
+						.item
+							img(src="./img/logo-4.png", alt="").img-fluid
+						.item
+							img(src="./img/logo-5.png", alt="").img-fluid
+						.item
+							img(src="./img/logo-1.png", alt="").img-fluid
+						.item
+							img(src="./img/logo-5.png", alt="").img-fluid
+						.item
+							img(src="./img/logo-1.png", alt="").img-fluid

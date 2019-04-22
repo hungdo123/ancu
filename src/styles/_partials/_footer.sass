@@ -1,0 +1,113 @@
+footer
+	background: #233441
+	.footer-1
+		justify-content: center
+		img 
+			max-width: 200px
+			+pad(3rem null null 1rem)
+		.list-inline
+			+pad(1rem null null 0.5rem)
+			a
+				
+				text-decoration: none
+				
+				i
+					font-size: 2rem
+					display: flex
+					justify-content: center
+					align-items: center
+					border-radius: 50%
+					overflow: hidden
+					width: 4rem
+					height: 4rem
+					color: #000
+					background: #c9c9c9
+		h3
+			+mar(2rem null 1rem null)
+			padding-bottom: 1rem
+			color: #fff
+			font-weight: 400
+			font-size: 1.2rem
+			text-transform: uppercase
+			position: relative
+
+		.list-unstyled
+			list-style-type: none
+			li
+				+mar(1rem null 1rem 1rem)
+				color: #989898
+				font-size: 1.2rem
+				font-weight: 300
+		.list-styled
+			list-style-type: none
+			li
+				+mar(1rem null 1rem -3rem)
+				color: #989898
+				font-size: 1.2rem
+				font-weight: 300
+				.fa
+					padding-right: 1rem
+		+media-breakpoint-up(sm)
+			.list-inline
+				a
+					i
+			h3
+				font-size: 1.5rem
+			.list-unstyled
+				li
+					font-size: 1.4rem
+			.list-styled
+				li
+					font-size: 1.4rem
+		+media-breakpoint-up(md)
+			.list-inline
+				a
+					i
+						font-size: 1rem
+						width: 2rem
+						height: 2rem
+			h3
+				font-size: 1.2rem
+			.list-unstyled
+				li
+					
+					font-size: 1rem
+			.list-styled
+				li
+					
+					font-size: 1rem
+		+media-breakpoint-up(lg)
+			.list-inline
+				a
+					i
+			h3
+				font-size: 1.2rem
+			.list-unstyled
+				li
+					+mar(0.5rem null 0.5rem null)
+					font-size: 1rem
+			.list-styled
+				li
+					+mar(1rem null 1rem null)
+					font-size: 1rem
+		+media-breakpoint-up(xl)
+			.list-inline
+				a
+					i
+			h3
+				font-size: 1.2rem
+			.list-unstyled
+				li
+					+mar(0.5rem 0 0.5rem 0)
+					font-size: 1rem
+			.list-styled
+				li
+					+mar(1rem null 1rem null)
+					font-size: 1rem
+	.footer-2
+		background: #05092b
+		p
+			+pad(1.5rem 2rem null 2rem)
+			font-size: 1.1rem
+
+			color: #fff

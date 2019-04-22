@@ -1,0 +1,72 @@
+<!-- ////////////// HEADER ////////////// -->
+header.active
+	.container.header-container
+		.navbar-wrapper#nav-bar-wrapper
+			
+			.menu-bar
+				.order-1.order-lg-2
+					.navbar-brand
+						img(src="./img/logo.png", alt="logo")
+				.order-lg-1.mr-auto.d-none.d-lg-block
+					.navbar#menu-mobile
+						ul.nav
+							li.nav-item.active
+								a(href="#").nav-link Giới thiệu
+							li.nav-item
+								a(href="#").nav-link  Lĩnh vực hoạt động
+							li.nav-item
+								a(href="#").nav-link  Dự án
+							li.nav-item
+								a(href="#").nav-link  Tin tức 
+				.order-lg-3.d-none.d-lg-block
+					.navbar#menu-mobile-2
+						ul.nav
+							li.nav-item
+								a(href="#").nav-link Thư viện
+							li.nav-item
+								a(href="#").nav-link  Tuyển dụng
+							li.nav-item
+								a(href="#").nav-link  Liên hệ
+			
+			.language-list
+				ul.list-inline
+					li.list-inline-item
+						a(href="#")
+							img(src="./img/vn.png", alt="")
+					li.list-inline-item
+						a(href="#")
+							img(src="./img/us.png", alt="")
+						
+					li.list-inline-item
+						a(href="#")
+							img(src="./img/sk.png", alt="")
+					li.list-inline-item
+						a(href="#")
+							img(src="./img/japan.png", alt="")
+					li.list-inline-item
+						a(href="#")
+							img(src="./img/china.png", alt="")
+			button#sidebarBtnOpen(type='button').d-block.d-lg-none
+				span
+					i.fa.fa-bars
+				
+			#sidebar.sidebar
+				#sidebarBtnClose.sidebar-close 
+					span
+						i.fa.fa-times
+				ul
+					li
+						a(href="#") Giới thiệu
+					li
+						a(href="#")  Lĩnh vực hoạt động
+					li
+						a(href="#")  Dự án
+					li
+						a(href="#")  Tin tức 
+					li
+						a(href="#") Thư viện
+					li
+						a(href="#")  Tuyển dụng
+					li
+						a(href="#")  Liên hệ
+			.sidebar-overlay
